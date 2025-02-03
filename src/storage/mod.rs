@@ -8,7 +8,7 @@ use object::{create_object, object_to_bytes, object_to_index, offset_to_index};
 
 pub struct Storage {
     file: File,
-    store: MmapMut,
+    pub store: MmapMut,
     batch_size: u32,
     pub indexes: Indexes,
     pub last_offset: u64,
